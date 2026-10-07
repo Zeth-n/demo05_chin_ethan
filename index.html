@@ -1,33 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
+    <meta name="comp1800 template" content="My 1800 App" />
 
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Other libraries go here -->
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!------------------------------>
     <!-- Your HTML Layout go here -->
     <!------------------------------>
     <!-- Stuff for body goes here -->
 
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark-subtle">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/017/120/789/non_2x/car-icon-isolated-simple-view-front-logo-illustration-sign-symbol-auto-style-car-logo-design-with-concept-sports-vehicle-icon-silhouette-vector.jpg"
+            height="36"
+          />
+          Ethan App
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                My account
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Saved Cars</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Setting</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Top Navbar -->
+
+    <!-- Hero Section starts -->
+    <div class="px-4 py-5 my-5 text-center bg-dark-subtle">
+      <img
+        class="d-block mx-auto mb-4"
+        src="https://static.vecteezy.com/system/resources/previews/017/120/789/non_2x/car-icon-isolated-simple-view-front-logo-illustration-sign-symbol-auto-style-car-logo-design-with-concept-sports-vehicle-icon-silhouette-vector.jpg"
+        alt=""
+        width="72"
+        height="57"
+      />
+      <h1 class="display-5 fw-bold text-body-emphasis">
+        Search For Cars in Your Area!
+      </h1>
+      <div class="col-lg-6 mx-auto">
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+            Browse Cars
+          </button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section ends -->
+
+    <!-- Start of the card group -->
+    <h1 class="mx-5 mb-4">Trending Vehicles</h1>
+    <div class="card-group mx-5">
+      <div class="card">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/dwburnett-rt-ionic-m3-5665-666c7e7cb7800.jpg?crop=0.670xw:0.671xh;0.0812xw,0.192xh"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Standard Cars</h5>
+          <p class="card-text">Browse</p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.topgear.com/sites/default/files/news-listicle/image/2026/07/BMW%20X5%20M60e%20xDrive%20030_0.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Electric Cars</h5>
+          <p class="card-text">Browse</p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.seattletimes.com/wp-content/uploads/2020/01/urn-publicid-ap-org-bec4c210361fa3ac0b375bf07a03cc6eBehind_the_Wheel_Hybrids_70483.jpg?d=2040x1464"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Hybrid Cars</h5>
+          <p class="card-text">Browse</p>
+          <p class="card-text">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of the card group -->
 
     <!---------------------------------------------->
     <!-- Your own JavaScript functions go here    -->
     <!---------------------------------------------->
 
     <!-- Link to scripts of your own -->
-    <!-- <script type="module" src="./src/main.js"></script> -->
-
-</body>
-
+    <script type="module" src="./src/main.js"></script>
+  </body>
 </html>
